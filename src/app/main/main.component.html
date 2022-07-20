@@ -1,0 +1,12 @@
+
+<div class="d-flex justify-content-center bg-primary py-3">
+  <h1 class="text-white">Nu's Angular Library</h1>
+</div>
+
+  <ul class="nav nav-tabs justify-content-center my-3">
+    <ng-container *ngFor="let item of menu">
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="tabId === item.id" [routerLink]="[item.link]" (click)="activeChecker(item.id)">{{item.title}}</a>
+      </li>
+    </ng-container>
+  </ul>

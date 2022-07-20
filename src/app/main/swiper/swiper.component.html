@@ -1,0 +1,27 @@
+
+<div class="card card_width">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-3">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <ng-container *ngFor="let item of swiperMenu">
+
+              <a 
+                class="nav-link" 
+                [class.active]="currentSwiperId === item.swiperId" 
+                (click)="activeChecker(item.swiperId)">
+                {{item.title}}
+              </a>
+
+            </ng-container>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <app-swiper1 *ngIf="currentSwiperId === 1"></app-swiper1>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
