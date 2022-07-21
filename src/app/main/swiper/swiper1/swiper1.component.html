@@ -1,1 +1,25 @@
 <p>swiper1 works!</p>
+<swiper [config]="config" class="d-lg-flex card-shadow border-s mb-2 swiper-width">
+  <ng-container *ngFor="let item of innerBannerList">
+    <ng-template swiperSlide>
+      <p class="img-text">{{ item.itemId }}</p>
+      <a [href]="item.url" title="前往{{ item.title }}">
+        <img [src]="item.pictureUrl" [alt]="item.title" class="img-size" />
+      </a>
+    </ng-template>
+  </ng-container>
+</swiper>
+<!-- swiper樣式修改 start -->
+<div class="swiper-father">
+  <div class="swiper-container" id="competitionEntries">
+    <!-- Add Pagination -->
+
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="test">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</div>
+<!-- swiper樣式修改 end -->

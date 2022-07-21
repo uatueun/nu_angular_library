@@ -8,6 +8,10 @@ import { SwiperComponent } from './main/swiper/swiper.component';
 import { TabsComponent } from './main/tabs/tabs.component';
 import { PresetComponent } from './main/preset/preset.component';
 import { Swiper1Component } from './main/swiper/swiper1/swiper1.component';
+import { CalculatorComponent } from './main/calculator/calculator.component';
+import { FxRatesComponent } from './main/calculator/fx-rates/fx-rates.component';
+import { SwiperModule } from 'swiper/angular';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +20,14 @@ import { Swiper1Component } from './main/swiper/swiper1/swiper1.component';
     SwiperComponent,
     TabsComponent,
     PresetComponent,
-    Swiper1Component
+    Swiper1Component,
+    CalculatorComponent,
+    FxRatesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,26 @@
+
+<div class="card card_width">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <ng-container *ngFor="let item of calculatorMenu">
+
+            <a
+              class="nav-link"
+              [class.active]="currentCalculatorId === item.calculatorId"
+              (click)="activeChecker(item.calculatorId)">
+              {{item.title}}
+            </a>
+
+          </ng-container>
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="tab-content" id="v-pills-tabContent">
+          <app-fx-rates *ngIf="currentCalculatorId === 2"></app-fx-rates>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
