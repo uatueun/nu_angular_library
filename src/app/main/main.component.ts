@@ -27,6 +27,12 @@ export class MainComponent implements OnInit {
       title:'Calculator',
       link:'/calculator'
     },
+    {
+      id:5,
+      title:'menuwork',
+      link:'/menuwork'
+    },
+
   ]
 
   tabId:number=1

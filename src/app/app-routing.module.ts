@@ -4,6 +4,7 @@ import { SwiperComponent } from './main/swiper/swiper.component';
 import { TabsComponent } from './main/tabs/tabs.component';
 import { PresetComponent } from './main/preset/preset.component';
 import { CalculatorComponent } from './main/calculator/calculator.component';
+import { MenuWorkComponent } from './main/menu-work/menu-work.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'calculator',
     component: CalculatorComponent,
+  },
+  {
+    path: 'menuwork',
+    component: MenuWorkComponent,
   },
 ];
 

@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-center">
+  <ng-container *ngFor="let item of menuList">
+    <button type="button" (click)="activeChecker(item.id)" class="btn btn-outline-primary mx-2">{{
+      item.id}}</button>
+  </ng-container>
+</div>
+
+<div class="card my-4 card_width">
+  <div class="card-body">
+    <app-menu1 *ngIf="currentMenuId === 1"></app-menu1>
+  </div>
+</div>
+
+

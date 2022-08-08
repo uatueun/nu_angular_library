@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import SwiperCore, { EffectFade, Navigation, Pagination, SwiperOptions } from 'swiper';
+import SwiperCore, { EffectFade, Navigation, Pagination,SwiperOptions } from "swiper";
+
 
 SwiperCore.use([EffectFade, Navigation, Pagination]);
 
@@ -13,12 +14,13 @@ export class Swiper1Component implements OnInit {
     slidesPerView: 1,
     centeredSlides: true,
     height: 337,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    // navigation: {
+    //   // nextEl: '.swiper-button-next',
+    //   // prevEl: '.swiper-button-prev',
+    // },
+    navigation:true,
     pagination: {
-      el: '.swiper-pagination',
+      // el: '.swiper-pagination',
       clickable: true,
     },
     loop: true,
@@ -62,5 +64,5 @@ export class Swiper1Component implements OnInit {
   ngOnInit(): void {
   }
 
-  
+
 }

@@ -11,6 +11,8 @@ import { Swiper1Component } from './main/swiper/swiper1/swiper1.component';
 import { CalculatorComponent } from './main/calculator/calculator.component';
 import { FxRatesComponent } from './main/calculator/fx-rates/fx-rates.component';
 import { SwiperModule } from 'swiper/angular';
+import { MenuWorkComponent } from './main/menu-work/menu-work.component';
+import { Menu1Component } from './main/menu-work/menu1/menu1.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { SwiperModule } from 'swiper/angular';
     PresetComponent,
     Swiper1Component,
     CalculatorComponent,
-    FxRatesComponent
+    FxRatesComponent,
+    MenuWorkComponent,
+    Menu1Component
   ],
   imports: [
     BrowserModule,
