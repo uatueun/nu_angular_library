@@ -5,6 +5,7 @@ import { TabsComponent } from './main/tabs/tabs.component';
 import { PresetComponent } from './main/preset/preset.component';
 import { CalculatorComponent } from './main/calculator/calculator.component';
 import { MenuWorkComponent } from './main/menu-work/menu-work.component';
+import {GridComponent} from'./main/grid/grid.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'menuwork',
     component: MenuWorkComponent,
+  },
+  {
+    path: 'grid',
+    component: GridComponent,
   },
 ];
 

@@ -29,9 +29,14 @@ export class MainComponent implements OnInit {
     },
     {
       id:5,
-      title:'menuwork',
+      title:'MenuWork',
       link:'/menuwork'
     },
+    {
+        id:6,
+        title:'Grid',
+        link:'/grid'
+      },
 
   ]
 

@@ -13,6 +13,7 @@ import { FxRatesComponent } from './main/calculator/fx-rates/fx-rates.component'
 import { SwiperModule } from 'swiper/angular';
 import { MenuWorkComponent } from './main/menu-work/menu-work.component';
 import { Menu1Component } from './main/menu-work/menu1/menu1.component';
+import { GridComponent } from './main/grid/grid.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { Menu1Component } from './main/menu-work/menu1/menu1.component';
     CalculatorComponent,
     FxRatesComponent,
     MenuWorkComponent,
-    Menu1Component
+    Menu1Component,
+    GridComponent
   ],
   imports: [
     BrowserModule,

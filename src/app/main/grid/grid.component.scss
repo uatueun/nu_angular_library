@@ -1,0 +1,50 @@
+.container{
+  width: 600px;
+  text-align: center;
+  line-height: 50px;
+  color: darkblue;
+}
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /*網格區塊的寬度大小*/
+  grid-template-rows: 50px 50px 50px 50px;/*網格區塊高度*/
+  grid-column-gap: 10px; /*網格區塊的左右間距*/
+  grid-row-gap: 10px; /*網格區塊的上下間距*/
+  grid-template-areas:
+  "content content content sidebar"; /*網格區塊名稱*/
+
+}
+#content{
+  grid-area: content; /*指定網格區塊名稱*/
+  background:pink;
+  border-radius: 10px 0 10px 0;
+
+}
+#sidebar{
+  grid-area: sidebar;
+  background: mediumturquoise;
+}
+#content2{
+  grid-column: 1/2; /*從第一條線到第二條線，因此只選擇了一個區塊範圍*/
+  background:pink;
+}
+#sidebar2{
+  grid-column: 2/5;
+  background:mediumturquoise;
+  border-radius: 10px 0 10px 0;
+}
+#content3{
+  grid-column: span 3; /*包含區塊的數量*/
+  background:pink;
+  border-radius: 10px 0 10px 0;
+}
+#sidebar3{
+  grid-column: span 1;
+  grid-row:span 2;
+  line-height: 110px;
+  background:mediumturquoise;
+  border-radius: 10px 0 10px 0;
+}
+.grid-box>div{
+  background:#eee;
+}
