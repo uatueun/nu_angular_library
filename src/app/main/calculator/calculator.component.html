@@ -18,6 +18,7 @@
       </div>
       <div class="col-9">
         <div class="tab-content" id="v-pills-tabContent">
+          <app-normal-calculator *ngIf="currentCalculatorId === 1"></app-normal-calculator>
           <app-fx-rates *ngIf="currentCalculatorId === 2"></app-fx-rates>
         </div>
       </div>

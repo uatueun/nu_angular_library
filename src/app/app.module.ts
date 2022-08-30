@@ -14,6 +14,7 @@ import { SwiperModule } from 'swiper/angular';
 import { MenuWorkComponent } from './main/menu-work/menu-work.component';
 import { Menu1Component } from './main/menu-work/menu1/menu1.component';
 import { GridComponent } from './main/grid/grid.component';
+import { NormalCalculatorComponent } from './main/calculator/normal-calculator/normal-calculator.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { GridComponent } from './main/grid/grid.component';
     FxRatesComponent,
     MenuWorkComponent,
     Menu1Component,
-    GridComponent
+    GridComponent,
+    NormalCalculatorComponent
   ],
   imports: [
     BrowserModule,

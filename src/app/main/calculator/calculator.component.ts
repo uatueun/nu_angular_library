@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FxRatesComponent } from './fx-rates/fx-rates.component';
+import { NormalCalculatorComponent } from './normal-calculator/normal-calculator.component';
 
 @Component({
   selector: 'app-calculator',
@@ -10,12 +12,12 @@ export class CalculatorComponent implements OnInit {
     {
       calculatorId: 1,
       title: 'Normal',
-      component: '',
+      component: NormalCalculatorComponent,
     },
     {
       calculatorId: 2,
       title: 'FX Rates',
-      component: '',
+      component: FxRatesComponent,
     },
   ];
 
